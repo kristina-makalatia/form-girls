@@ -1,0 +1,16 @@
+@media (max-width: 1040px) {
+    /* .section-bg {
+        height: auto;
+    } */
+    .block1 {
+        width: 48%;
+    }
+    .container {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 480px) {
+    .block1 {
+        width: 100%;
+    }
+}
