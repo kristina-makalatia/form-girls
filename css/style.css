@@ -1,104 +1,81 @@
-/* section#1 styles */
-.section-bg {
-    background-image: url(../images/bg.jpg);
-    width: 100%;
-    /* height: 612px; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 96px;
-    padding-bottom: 91px;
-}
-.title1 {
-    font-size: 14px;
-    color: #5863F8;
-}
-.title2 {
-    font-size: 42px;
-    color: #fff;
-    max-width: 376px;
-}
 .container {
     max-width: 1088px;
     width: 100%;
     margin: 0 auto;
 }
-.block1 {
-    width:260px;
-    height: 260px;
-    background-color: #fff;
+.form-wraper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+.left-block {
+    max-width: 720px;
+    width: 100%;
+}
+.textarea-wraper {
+    width: 100%;
+    height: 288px;
+    background-color: #F8F8F8;
+    resize: none;
+    border: 2px solid #E8E8E8;
+    padding-left: 20px;
+}
+.right-block {
+    max-width: 352px;
+    width: 100%;
+}
+.input-wraper {
+    width: 100%;
+    height: 60px;
+    background-color: #F8F8F8;
+    margin-bottom: 16px;
+    border: 2px solid #E8E8E8;
+    padding-left: 20px;
+}
+.btn-send {
+    max-width: 352px;
+    width: 100%;
+    height: 60px;
+    background-color: #5863F8;
+    border: none;
+    color: #fff;
+}
+.input-wraper:focus,
+.textarea-wraper:focus {
+    outline:none;
+}
+
+/* pseudo classes */
 .box-wraper {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
-    flex-wrap: wrap;
 }
-.icon {
-    width: 59px;
-    height: 58px;
-    background-color: #5863F8;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.block1 p {
-    width: 221px;
-    text-align: center;
-}
-.block1 h2 {
-    margin-top: 15px;
-    margin-bottom: 22px;
-}
-
-
-/* form */
-.section-form {
-    padding-bottom: 80px;
-}
-.flex-form {
-    display: flex;
-    flex-direction: column;
-}
-.input-wraper {
-    max-width: 700px;
-    width: 100%;
-    height: 45px;
-    color: red;
-    font-size: 16px;
-    background-color: lightblue;
-    border-radius: 30px;
-}
-.input-wraper::placeholder,
-.textarea-wraper::placeholder  {
-    color: blue;
-    font-size: 14px;
-}
-
-.input-wraper:focus {
-    outline: none;
-}
-.textarea-wraper:focus {
-    outline: none;
-}
-.textarea-wraper {
-    resize: none;
-    max-width: 700px;
-    width: 100%;
+.block {
+    width: 200px;
     height: 200px;
-    color: yellow;
-    font-size: 16px;
+    background-color: #5863F8;
 }
-.btn-send {
-    max-width: 200px;
-    width: 100%;
-    height: 45px;
-    background-color: orange;
-    margin-top: 30px;
-    border: none;
-    border-radius: 30px;
+/* .block:nth-child(1) {
+    background-color: red;
 }
+.block:nth-child(2) {
+    background-color: yellow;
+}
+.block:nth-child(3) {
+    background-color: green;
+}
+.block:nth-child(4) {
+    background-color: aqua;
+} */
+
+.block:nth-child(odd) {
+    background-color: pink;
+}
+.block:nth-child(even) {
+    background-color: greenyellow;
+}
+
+.block:nth-child(3) .test {
+    color: #fff;
+}
+

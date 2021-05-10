@@ -4,100 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Our Website Description">
+    <meta name="keywords" content="HTML, CSS, Responsive, Form, Pseudo Classes">
+    <meta name="author" content="Kristina">
+    <meta name="google" content="notranslate" />
+    <script
+      src="https://kit.fontawesome.com/6de6aa5275.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Form & Responsive & meta tags</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <section class="section-bg">
+    <section>
       <div class="container">
-        <h4 class="title1">About us</h4>
-        <h3 class="title2">We bring you the finest details</h3>
-        <div class="box-wraper">
-          <div class="block1">
-            <div class="icon">
-              <img src="images/001-hotel-1.svg" alt="image" />
-            </div>
-            <h2>Free Wifi to stay connected</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
+        <h3>Contact</h3>
+        <h2>Contact us to get free support</h2>
+        <form class="form-wraper" action="">
+          <div class="left-block">
+            <textarea
+              class="textarea-wraper"
+              name="description"
+              id="textareadescription"
+              placeholder="Description"
+            ></textarea>
           </div>
+          <div class="right-block">
+            <div>
+              <input
+                class="input-wraper"
+                type="text"
+                id="subj"
+                name="subjectinput"
+                placeholder="Subject"
+              />
+            </div>
+            <div>
+              <input
+                class="input-wraper"
+                type="text"
+                id="name"
+                name="nameinput"
+                placeholder="Name/Surname"
+              />
+            </div>
+            <div>
+              <input
+                class="input-wraper"
+                type="email"
+                id="email"
+                name="emailtinput"
+                placeholder="Email"
+              />
+            </div>
+            <div class="radio">
+              <div>
+                <input type="radio" id="age1" name="age" />
+                <label for="">18 - 35</label>
+              </div>
 
-          <div class="block1">
-            <div class="icon">
-              <img src="images/001-hotel-1.svg" alt="image" />
+              <div>
+                <input type="radio" id="age2" name="age" />
+                <label for=""> 35 - 55</label>
+              </div>
             </div>
-            <h2>Free Wifi to stay connected</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
-          </div>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" id="hobbymusic" name="music" />
+                <label for="">Music</label>
+              </div>
+              <div>
+                <input type="checkbox" id="hobbydance" name="dance" />
+                <label for="">Dance</label>
+              </div>
+            </div>
 
-          <div class="block1">
-            <div class="icon">
-              <img src="images/001-hotel-1.svg" alt="image" />
-            </div>
-            <h2>Free Wifi to stay connected</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
+            <button class="btn-send" type="submit">
+              Send <i class="far fa-paper-plane"></i>
+            </button>
           </div>
-
-          <div class="block1">
-            <div class="icon">
-              <img src="images/001-hotel-1.svg" alt="image" />
-            </div>
-            <h2>Free Wifi to stay connected</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
-            </p>
-          </div>
-        </div>
+        </form>
       </div>
     </section>
 
-    <section class="section-form">
+    <section>
       <div class="container">
-        <form action="">
-          <div class="flex-form">
-            <label for="fname"> Name </label>
-            <input
-              class="input-wraper"
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Your Name.."
-              required
-            />
+        <h2>Pseudo classes</h2>
+        <div class="box-wraper">
+          <div class="block">
+            <p  class="test"> test </p>
           </div>
-          <div class="flex-form">
-            <label for="passw"> Password </label>
-            <input
-              class="input-wraper"
-              type="password"
-              id="passw"
-              name="mypass"
-              placeholder="Your Password.."
-              required
-            />
+          <div class="block">
+            <p  class="test"> test </p>
           </div>
-          <div class="flex-form">
-            <label for="review"> Review </label>
-            <textarea
-              placeholder="Enter Your Review..."
-              class="textarea-wraper"
-              id="review"
-            >
-            </textarea>
+          <div class="block">
+            <p class="test"> test </p>
           </div>
-          <button class="btn-send" type="submit">Send</button>
-        </form>
+          <div class="block">
+            <p  class="test"> test </p>
+          </div>
+        </div>
       </div>
     </section>
   </body>

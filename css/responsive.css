@@ -1,16 +1,12 @@
-@media (max-width: 1040px) {
-    /* .section-bg {
-        height: auto;
-    } */
-    .block1 {
-        width: 48%;
+@media (max-width:1073px) {
+    .right-block,
+    .btn-send {
+        max-width: 720px;
     }
     .container {
-        padding: 0 30px;
+        padding: 0 15px;
     }
-}
-@media (max-width: 480px) {
-    .block1 {
-        width: 100%;
+    .form-wraper {
+        justify-content: center;
     }
 }
